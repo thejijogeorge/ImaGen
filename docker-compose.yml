@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  imagegen:
+    image: jijogeorge86/imagen-imagegen:latest
+    build: .
+    container_name: imagegen-app
+    ports:
+      - "7860:7860"
+    env_file:
+      - .env
+    volumes:
+      - huggingface_cache:/root/.cache/huggingface
+      - ./generated_images:/app/generated_images
+    environment:
+      - GRADIO_SERVER_NAME=0.0.0.0
+      - GRADIO_SERVER_PORT=7860
+    restart: unless-stopped
+
+volumes:
+  huggingface_cache:
