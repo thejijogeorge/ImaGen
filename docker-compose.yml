@@ -2,8 +2,10 @@ version: '3.8'
 
 services:
   imagegen:
+    #for users: this pulls prebuilt image
     image: jijogeorge86/imagen-imagegen:latest
-    build: .
+    #for developers local builds uncomment below
+    #build: .
     container_name: imagegen-app
     ports:
       - "7860:7860"
