@@ -3,7 +3,7 @@ version: '3.8'
 services:
   imagegen:
     #for users: this pulls prebuilt image
-    image: jijogeorge86/imagen-imagegen:latest
+    image: thejijogeorge/imagen-imagegen:latest
     #for developers local builds uncomment below
     #build: .
     container_name: imagegen-app
