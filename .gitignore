@@ -1,0 +1,10 @@
+/.env
+/generated_image.png
+/.venv/
+/generated_images/
+/.idea/imagen.iml
+/.idea/vcs.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/pyProjectModel.xml
